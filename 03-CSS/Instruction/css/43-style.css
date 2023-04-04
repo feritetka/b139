@@ -1,0 +1,92 @@
+:root{
+    --color1: crimson;
+    --color2: rgb(44, 173, 232);
+    --color3: rgb(43, 42, 42);
+    --color4:#fbb040;
+
+}
+body{
+    font-family: 'Nunito';
+    margin: 0;
+}
+section.topbar{
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color:var(--color1);
+}
+section.menubar ul,
+section.topbar ul{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+section.topbar ul a{
+    color: var(--color4);
+    text-decoration: none;
+}
+
+section.menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+section.menubar img{
+    width: 200px;
+    height: auto;
+}
+
+section.menubar ul a{
+    text-decoration: none;
+    background-color: var(--color4);
+    color: var(--color3);
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+}
+section.menubar ul a:hover{
+    background-color: var(--color1);
+}
+section.slider{
+    background-image: url("../img/nature_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    position: relative;
+}
+section.slider h2{
+    position: absolute;
+    bottom: 30px;
+    left:0;
+    right: 0;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+    text-shadow: 0 0 10px var(--color3);
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color: white;
+    background-color: rgb(6, 190, 6);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
